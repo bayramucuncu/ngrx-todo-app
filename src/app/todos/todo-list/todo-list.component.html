@@ -1,0 +1,20 @@
+<div class="todo-list-panel">
+
+  <div class="header">
+
+    <h2 class="title">ToDos</h2>
+
+    <!-- <button mat-mini-fab>
+        <mat-icon class="add-course-btn" (click)="onAddCourse()">add</mat-icon>
+      </button> -->
+
+  </div>
+
+  <enter-todo></enter-todo>
+
+
+</div>
+
+<div class="todo-list-container">
+  <todo-item *ngFor="let item of todos$ | async" [item]="item"></todo-item>
+</div>

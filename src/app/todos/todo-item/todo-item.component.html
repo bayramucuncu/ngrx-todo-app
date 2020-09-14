@@ -1,0 +1,28 @@
+<mat-toolbar color="link">
+    <mat-toolbar-row *ngIf="!isEdit" class="mat-toolbar-single-row">
+        <button (click)="done()" mat-icon-button color="primary">
+            <mat-icon *ngIf="!item.done">check_box_outline_blank</mat-icon>
+            <mat-icon *ngIf="item.done">check_box</mat-icon>
+        </button>
+        <h4 (click)="turnOnEditMode()"> {{item.name}}</h4>
+        <span class="example-spacer"></span>
+        <button (click)=delete() mat-icon-button color="warn">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="isEdit" class="mat-toolbar-single-row">
+        <button mat-icon-button color="accent" style="margin-left: 10px;" (click)="turnOoffEditMode()">
+            <span class="material-icons">cancel</span>
+        </button>
+        <div [formGroup]="form">
+            <mat-form-field style="width:330px !important; font: 400 15.3333px Arial !important;">
+                <input matInput placeholder="Enter new todo item ...." autocomplete="off" formControlName="name">
+            </mat-form-field>
+        </div> 
+        <span class="example-spacer"></span>
+        <button mat-icon-button color="accent" style="margin-left: 10px;" (click)="save()" [disabled]="!form?.valid">
+            <span class="material-icons">save</span>
+        </button>
+
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 30px;
+}
+
+.menu-button {
+    color: white;
+    border: none;
+    cursor:pointer;
+    outline:none;
+}

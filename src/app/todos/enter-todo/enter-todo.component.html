@@ -1,0 +1,10 @@
+<div [formGroup]="form" class="todo-form-container">
+
+    <mat-form-field>
+        <input matInput placeholder="Enter new todo item ...." autocomplete="off" formControlName="name">
+    </mat-form-field>
+
+    <button mat-mini-fab color="accent" style="margin-left: 10px;" (click)="add()" [disabled]="!form?.valid">
+    <span class="material-icons">add</span>
+  </button>
+</div>

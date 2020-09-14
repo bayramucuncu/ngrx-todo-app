@@ -1,0 +1,25 @@
+.todo-list-panel {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list-container{
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.title {
+    text-align: center;
+    margin-right: 15px;
+}
+
+h2 {
+    font-family: "Roboto";
+  }

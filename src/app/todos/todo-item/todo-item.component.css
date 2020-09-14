@@ -1,0 +1,21 @@
+mat-card {
+    margin: 10px 0px;
+}
+
+mat-toolbar {
+    margin: 8px 0px;
+}
+
+.mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 8px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
