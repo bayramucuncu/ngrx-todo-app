@@ -18,5 +18,7 @@ Run `npm run server` to use web api (nodejs) from angular application.
 - Run node server `npm run server` in a new termial.
 - Run angular application `ng serve --open` in another terminal.
 
-## Application view
+## Application view media
 ![image](https://user-images.githubusercontent.com/2901269/93127101-fbba9f00-f6d5-11ea-81f7-61c32e653f3b.png)
+
+Video: https://www.youtube.com/watch?v=kXbSaZOL10E
