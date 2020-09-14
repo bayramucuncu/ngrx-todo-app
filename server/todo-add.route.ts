@@ -19,6 +19,6 @@ export function addToDo(req: Request, res: Response) {
 
     res.status(200).json(newToDo);
 
-  }, 2000);
+  }, 1000);
 
 }

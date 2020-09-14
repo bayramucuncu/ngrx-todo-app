@@ -7,7 +7,7 @@ export function updateToDo(req: Request, res: Response) {
   console.log("Updating todo ...");
 
   const id = req.params["id"],
-    changes = req.body;
+        changes = req.body;
 
   const changeIndex = TODOS.findIndex(item => item.id == id);
 
@@ -21,6 +21,6 @@ export function updateToDo(req: Request, res: Response) {
 
     res.status(200).json(TODOS[id]);
 
-  }, 2000);
+  }, 1000);
 
 }

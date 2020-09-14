@@ -17,6 +17,6 @@ export function deleteToDo(req: Request, res: Response) {
 
     res.status(200).json({ id });
 
-  }, 2000);
+  }, 1000);
 
 }
