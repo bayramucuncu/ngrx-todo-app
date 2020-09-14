@@ -1,21 +1,22 @@
-import {Request, Response} from 'express';
-import {TODOS} from "./data";
+import { Request, Response } from 'express';
+import { TODOS } from "./data";
 
 
 export function deleteToDo(req: Request, res: Response) {
 
-    console.log("Deleting todo ...");
+  console.log("Deleting todo ...");
 
-    const id = req.params["id"];
+  const id = req.params["id"];
 
-    const course = TODOS[id];
+  const courseIndex = TODOS.findIndex(item => item.id == id);
 
-    delete TODOS[id];
+  if (courseIndex >= 0)
+    delete TODOS[courseIndex];
 
-    setTimeout(() => {
+  setTimeout(() => {
 
-      res.status(200).json({id});
+    res.status(200).json({ id });
 
-    }, 2000);
+  }, 2000);
 
 }
